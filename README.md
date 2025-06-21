@@ -24,16 +24,14 @@ A sleek and modern product listing web application built with **Next.js 14**, **
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/product-gallery-app.git
-cd product-gallery-app
+git clone https://github.com/aman68695613/geer-intern-assignment.git
+cd geer-intern-assignment
 ```
 
 ### 2. Install dependencies
 
 ```bash
 npm install
-# or
-yarn
 ```
 
 ### 3. Run the development server
