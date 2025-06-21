@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Product Marketplace App
 
-## Getting Started
+A sleek and modern product listing web application built with **Next.js 14**, **TypeScript**, and **ShadCN UI**. Users can browse, add, and delete products in a beautiful, responsive interface styled with gradients, dark mode, and smooth animations.
 
-First, run the development server:
+![Preview](./public/preview.png)
+
+---
+
+## 🔧 Tech Stack
+
+- **Next.js 14 (App Router + Server Components)**
+- **TypeScript**
+- **ShadCN UI** (built on Radix & Tailwind CSS)
+- **Tailwind CSS** (custom dark theme, gradient backgrounds, blur effects)
+- **Lucide React** (icons)
+- **Sonner** (toast notifications)
+- **React Hook Form + Zod** (form validation)
+- **Lottie Player** (welcome animation)
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/product-gallery-app.git
+cd product-gallery-app
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [`http://localhost:3000`](http://localhost:3000) to view the app in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Folder Structure
 
-## Learn More
+```
+/app              → Next.js app directory (routes, pages)
+/components       → UI components (cards, buttons)
+/lib              → Dummy product data
+/public           → Static files and icons
+/styles           → Global CSS & Tailwind configs
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Notes & Assumptions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Products are currently stored in a **temporary in-memory array** (`/lib/data.ts`). No database is connected.
+- Images use external URLs or a placeholder. Broken URLs may result in missing previews.
+- All styles are built with **utility classes** using **Tailwind** and **ShadCN design tokens**.
+- The app is fully responsive and optimized for both light and dark themes (default: dark).
+- This is intended as a **frontend showcase** (internship assignment), not a production-ready system.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✨ Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 📦 Add, view, and delete products
+- 🔍 Search products by name
+- 🧊 Animated skeleton loaders during loading/deletion
+- 🧠 Accessible components with keyboard and screen reader support
+- 💅 Animated gradients, blur effects, hover tilts, and glowing shadows
+- 🛠 Built with modular and clean code for easy extension
+
+---
+
+## 📸 UI Preview
+
+### Landing page 
+![Homepage](./public/preview.png)
+
+### Product list page
+![products](/public/image.png)
+
+### Add Product page 
+![Add product](/public/image2.png)
+
+### View Product page 
+![view Product](/public/image3.png)
+
+---
+
